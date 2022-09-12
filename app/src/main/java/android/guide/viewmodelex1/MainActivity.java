@@ -31,17 +31,10 @@ MainActivityViewModel viewModel;
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                ------------- normal way : ---------------------
-//                textView.setText(String.valueOf(counter));
-//                --------------------------------------------------------
-
-//                ------------- with ViewModel : ---------------------
-                textView.setText(String.valueOf(viewModel.counter+=1));
-
+                viewModel.addOne();
+                textView.setText(String.valueOf(viewModel.counter));
             }
         });
-
-
 
     }
 }

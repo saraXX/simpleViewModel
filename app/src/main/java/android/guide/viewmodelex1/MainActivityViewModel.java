@@ -5,4 +5,8 @@ import androidx.lifecycle.ViewModel;
 public class MainActivityViewModel extends ViewModel {
     public int counter = 0;
 
+    public void addOne(){
+        counter++;
+    }
+
 }
